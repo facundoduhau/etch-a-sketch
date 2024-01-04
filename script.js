@@ -10,4 +10,6 @@ slider.oninput = function()
 
 // Adds "pixels" as a value from the slidebar
 
-
+const screen = document.querySelector('#screen');
+var pixel = document.createElement('div');
+screen.appendChild(pixel);
