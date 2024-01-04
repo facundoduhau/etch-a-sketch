@@ -1,0 +1,205 @@
+html, body
+{
+    background-color: rgb(251, 234, 205);
+    margin: 0;
+    height: 100vh;
+}
+
+/* Wonder and Bartino fonts, added as custom fonts */
+@font-face {
+    font-family: wonderFont;
+    src: url(./fonts/Wonder\ Mermaid.otf);
+}
+
+@font-face {
+    font-family: bartinoFont;
+    src: url(./fonts/BartinoStripes-Regular.ttf);
+}
+
+/* The page container */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The top part of the screen */
+.top
+{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b08e6b;
+    font-family: wonderFont;
+    font-size: 58px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+
+}
+
+/* The main screen */
+.mid
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Settings container */
+.holder
+{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-right: 200px;
+}
+
+/* The panel for all the settings */
+.settings{
+    height: 650px; width: 250px;
+    background-color: #b08e6b;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black solid;
+}
+
+/* Etch a sketch container */
+.right
+{
+    display: flex;
+    margin-right: 50vh;
+}
+
+/* Etch a sketch border */
+.border
+{
+    background-color: #ff6b6b;
+    height: 70vh; width: 70vh;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #8d4925 solid;
+}
+
+/* Etch a sketch screen */
+.screen
+{
+    background-color: white;
+    height: 50vh; width: 50vh;
+    border: #8d4925 solid;
+}
+
+/* Footer */
+.bot
+{
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bartinoFont;
+    font-size: 36px;
+}
+
+/* All imgs */
+.img
+{
+    height: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Settings clear button */
+.btn
+{
+    background-color: rgb(251, 234, 205);
+    border: none;
+    height: 46px; width: 204px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: bartinoFont;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Settings clear button reacts to cursor hover */
+.btn:hover
+{
+    background-color: #8d4925;
+    color: white;
+    cursor: pointer;
+}
+
+/* The color settings */
+.color
+{
+    font-family: bartinoFont;
+    font-size: 24px;
+    height: 146px; width: 204px;
+    background-color: rgb(251, 234, 205);
+    border-radius: 6px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Settings title */
+.text
+{
+    font-family: bartinoFont;
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+/* Density setting */
+.grid
+{
+    background-color: rgb(251, 234, 205);
+    display: flex;
+    flex-direction: column;
+    font-family: bartinoFont;
+    height: 86px; width: 204px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+.sliderText
+{
+    font-size: 24px;
+
+}
+
+/* Buttons of the settings that are not the "Settings" title itself */
+.settingsButtons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.black, .rainbow
+{
+    border: none;
+    background-color: #b08e6b;
+    font-family: bartinoFont;
+    color: white;
+    height: 32px; width: 110px;
+    font-size: 24px;
+    border-radius: 6px;
+}
+
+.black:hover, .rainbow:hover
+{
+    background-color: #8d4925;
+    color: white;
+    cursor: pointer;
+}
