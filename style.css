@@ -96,12 +96,6 @@ html, body
     flex-wrap: wrap;
 }
 
-/* Pixels of the etch a sketch screen */
-.pixels
-{
-    width: 25%
-}
-
 /* Footer */
 .bot
 {
