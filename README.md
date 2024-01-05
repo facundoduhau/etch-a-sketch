@@ -1,4 +1,4 @@
-![image](https://github.com/facundoduhau/etch-a-sketch/assets/128261681/57234042-e81c-4c30-aa9a-372b035361b8)# Etch a Sketch 🎨
+# Etch a Sketch 🎨
 This is the fourth "The Odin Project" exercise.
 
 It develops lots of JavaScript knowledge, as well as bringing up some CSS to the table.
