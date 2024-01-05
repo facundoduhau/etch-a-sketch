@@ -1,38 +1,59 @@
 // Gets screen density value, and prints it next to the slidebar
 const slider = document.querySelector("input");
 const value = document.querySelector(".value");
-value.textContent = slider.value;
+var grid;
 
 //Function that gets the value of the bar at a given point, 
 function getSliderValue()
 {
-    value.textContent = this.value;
-    console.log("The slider has a value of " + slider.value + " in the slide bar")
+    value.textContent = this.slider.value;
+    console.log(slider.value)
 };
 
 // Adds "pixels" as a value from the slidebar
 function addPixel()
 {
-    const screen = document.querySelector('#screen');
-    var pixel = document.createElement('div');
-    pixel.className="pixels"
+    let screen = document.querySelector('#screen');
+    let pixel = document.createElement('div');
+    pixel.style.width = "inherit"
     screen.appendChild(pixel);
 };
 
 // Function that multiplyes slider value times itself, to get the area of the grid
 function gridArea()
 {
-    let gridArea = (slider.value*slider.value)
-    console.log("The grid has an area of " + gridArea + " pixels");
+    grid = (slider.value*slider.value)
+    console.log(grid);
 }
+
+// Creates the needed pixels
+function addGrid()
+{
+    for (let i = 1; i < grid; i++)
+    {
+        addPixel();
+    }
+}
+
+
+
+
+
+
+
+
 
 // When the user changes the slide bar value, it returns the new value
 slider.oninput = function()
 {
     getSliderValue();
     gridArea();
+    value.textContent = slider.value;
+    addGrid();
 };
 
-
 // Sets the grid to the default value (50), and also the grid starting value (2500)
-getSliderValue(); gridArea();
+getSliderValue();
+gridArea();
+
+
