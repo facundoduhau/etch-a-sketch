@@ -104,9 +104,10 @@ button:hover
 .gridholder
 {
     background-color: white;
-    border: #AD7F2A solid;
-    height: 50vh;
-    width: 50vh;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bot
