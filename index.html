@@ -1,73 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js" defer></script>
         <title>📺 Etch a Sketch</title>
-
     </head>
-
     <body>
-
-        <div class="container">
-
-            <div class="top">Etch a Sketch</div>
-
-            <div class="mid">
-
-                <div class="holder">
-
-                    <div class="settings">
-
-                        <div class="text">Settings</div>
-
-                        <div class="settingsButtons">
-
-                        <div class="grid">
-                            <div class="gridText"> Screen density</div>
-                            <div class="sliderText">
-
-                                <div class="slider"><input id="slider" type="range" min="4" max="50" value="27"></div>
-                                
-                                <div class="value">
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="color">Choose color
-                            <div><button class="black">Black</button></div>
-                            <div><button class="rainbow">Rainbow</button></div>
-                        </div>
-
-                        <div class="clearrBtn"><button class="btn">Clear screen</button></div>
-                    </div>
-
-                    </div>
-
-                </div>
-
-                <div class="right">
-
-                    <div class="border">
-
-                    <div id="screen" class="screen"></div>
-
-                </div>
-
-                </div>
-
+        <header class="top">
+            <h1 class="title">Etch a sketch</h1>
+            <div class="input">
+                <button class="size">Change grid size</button>
+                <input type="color" class="color">
             </div>
+        </header>
 
-            <div class="bot">Made by: facundoduhau 
-                <img class="img" src="./imgs/github.png">
-                || 2024
+        <main class="mid">
+            <div class="case">
+                <div class="gridholder">
+                    <div class="grid"></div>
+                </div>
             </div>
+        </main>
 
-        </div>
-
+        <footer class="bot">
+            <h2 class="copy">Copyright © 2024 facundoduhau</h2>
+        </footer>
     </body>
 </html>
