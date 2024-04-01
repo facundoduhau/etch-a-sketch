@@ -110,6 +110,11 @@ button:hover
     flex-wrap: wrap;
 }
 
+.pixel
+{
+    width: 25px;
+}
+
 .bot
 {
     text-align: center;
