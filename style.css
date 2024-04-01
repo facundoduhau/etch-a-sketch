@@ -51,7 +51,8 @@ button, .color
 {
     height: 40px;
     width: 120px;
-    margin-right: 24px;
+    margin-right: 12px;
+    margin-left: 12px;
     background-color: #BB9A38;
     border-radius: 8px;
     text-align: center;
@@ -108,11 +109,6 @@ button:hover
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.pixel
-{
-    width: 25px;
 }
 
 .bot
